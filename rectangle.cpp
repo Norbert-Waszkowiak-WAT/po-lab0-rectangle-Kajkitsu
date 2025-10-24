@@ -24,6 +24,16 @@ class Rectangle {
   }
 
   double getHeight() const {
-   return width;
+   return height;
+  }
+
+  double area() const {
+    return width * height;
+  }
+
+  void display() const {
+    std::cout << "Width: " << width << ", Height: " << height
+              << ", Perimeter: " << perimeter()
+              << ", Area: " << area() << std::endl;
   }
 };
