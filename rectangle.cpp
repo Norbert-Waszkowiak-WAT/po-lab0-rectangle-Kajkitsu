@@ -11,11 +11,19 @@ class Rectangle {
     width = w;
   }
 
+  void setHeight(double h) {
+    height = h;
+  }
+
   double perimeter() const {
     return 2 * (width + height);
   }
 
   double getWidth() const {
+   return width;
+  }
+
+  double getHeight() const {
    return width;
   }
 };
